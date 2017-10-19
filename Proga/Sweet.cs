@@ -8,13 +8,6 @@ namespace Proga
 {
     class Sweet
     {
-        public Sweet(string name, int weight, int calories, int cost)
-        {
-            Name = name;
-            Weight = weight;
-            Calories = calories;
-            Cost = cost;
-        }
 
         public string Name { get; set; }
 
@@ -24,5 +17,21 @@ namespace Proga
 
         public int Cost { get; set; }
 
+        public Sweet() { }
+
+
+        public Sweet(string name, int weight, int calories, int cost)
+        {
+            Name = name;
+            Weight = weight;
+            Calories = calories;
+            Cost = cost;
+
+        }
+        public override string ToString()
+        {
+            string ThisPod = string.Format("  Name: {0} \tWeight: {1} \tCalories: {2} \tCost: {3}", Name, Weight, Calories, Cost);
+            return ThisPod;
+        }
     }
 }

@@ -17,6 +17,11 @@ namespace Proga
             ProcVitA = vitA;
             ProcVitC = vitC;
         }
-
+        public override string ToString()
+        {
+            string myPod = base.ToString();
+            myPod += string.Format("Procent Of Vitamin A : {0} \tProcent of Vitamin C : {1} ", ProcVitA, ProcVitC);
+            return myPod;
+        }
     }
 }

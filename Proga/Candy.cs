@@ -17,5 +17,11 @@ namespace Proga
             ProcKakao = prockak;
             Сomposition  = composition;
         }
+        public override string ToString()
+        {
+            string myPod = string.Format("Procent of Kakao: {0} \tСomposition: {1}", ProcKakao, Сomposition);
+            myPod += base.ToString();
+            return myPod;
+        }
     }
 }

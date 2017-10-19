@@ -18,6 +18,13 @@ namespace Proga
             Taste = taste;
             PraceofGlaze = praceglaze;
         }
+        public override string ToString()
+        {
+            string myPod = string.Format("Taste : {0} \tPrace of Glaze : {1}",Taste,PraceofGlaze);
+            myPod += base.ToString();
+            return myPod;
+            
+        }
 
     }
 }
