@@ -23,5 +23,10 @@ namespace Proga
             myPod += string.Format("Procent Of Vitamin A : {0} \tProcent of Vitamin C : {1} ", ProcVitA, ProcVitC);
             return myPod;
         }
+        public override bool contain(string str)
+        {
+            if (str == "fruit") return true;
+            return false;
+        }
     }
 }

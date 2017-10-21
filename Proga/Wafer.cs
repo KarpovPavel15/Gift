@@ -25,6 +25,10 @@ namespace Proga
             return myPod;
             
         }
-
+        public override bool contain(string str)
+        {
+            if (str == "wafer") return true;
+            return false;
+        }
     }
 }

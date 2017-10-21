@@ -23,5 +23,10 @@ namespace Proga
             myPod += base.ToString();
             return myPod;
         }
+        public override bool contain(string str)
+        {
+            if (str == "candy") return true;
+            return false;
+        }
     }
 }
