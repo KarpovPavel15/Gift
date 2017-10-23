@@ -53,8 +53,8 @@ namespace Proga
             }
             Console.WriteLine(summWeight);
 
-            //gft.Sort();
-            //Show.outputinfo(gft);
+            gft.Sort();
+            Show.outputinfo(gft);
 
         }
     }

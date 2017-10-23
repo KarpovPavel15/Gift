@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proga
 {
-    class Sweet
+    class Sweet : IComparable
     {
 
         public string Name { get; set; }
@@ -37,6 +37,15 @@ namespace Proga
         {
             if (str == "sweet") return true;
             return false;
+        }
+
+        public int CompareTo(object obj)
+        {
+            if (obj is Sweet)
+                return this.Calories.CompareTo((obj as Sweet).Calories);
+            return 0;
+
+
         }
     }
 }
